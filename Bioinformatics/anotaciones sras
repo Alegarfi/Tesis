@@ -1,0 +1,9 @@
+Anotaciones sobre los SRA
+'Sequence Read Archive'
+Los SRA crea datos de secuencia disponibles para la comunidad de investigación para potenciar/acelerar la reproducibilidad y permitir nuevos descubrimientos por la comparación de conjuntos de datos
+
+"cluster dbgap"[Properties] 
+
+wget -O ./SRP001599_info.csv 'http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?save=efetch&db=sra&rettype=runinfo&term= SRP001599'
+
+wget -O ./query_results.csv 'http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?save=efetch&db=sra&rettype=runinfo&term="Homosapiens"[Organism]'

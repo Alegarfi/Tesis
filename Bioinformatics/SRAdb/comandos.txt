@@ -1,0 +1,21 @@
+dbConnect:
+Función y descripción de algunos comandos utilizados para elpaquete SRAdb 'dbConnect' :Sirve para conectar a una database a 
+través de un procedimiento apropiado de autenticación. Se debe apelar a esta funcion repetidamente para obtener resultados cada
+vez que se necesiten
+
+SQLite: 
+Juntos 'SQLite' y 'dbConnect' permiten conectar a un archivo db y esta opción dentro del comando permite retornar a un 
+objeto de clase 'SQLiteDriver'
+
+file.info:
+Función de utilidad para extraer infomación acerca de archivos en el sistema de archivos del usuario; precisa información del tipo
+'size' que, obviamente, menciona el tamaño del archivo que se esté revisando; 'isdir', de carácter lógico, indica si el archivo es 
+un directorio (por lo cual sus valores yacen en un FALSE o en TRUE); 'mode' indica el tipo de permisos que se tienen para 
+
+colDescriptions:
+Consigue las descripciones de la columna del SRAmetadb.sqlite, incluyendo la tabla, el campom el tipo de datos del campo, 
+la descripción y valores por defecto. No entiendo por qué los argumentos van de esta forma y que quiere decir la redacción en la 
+que está. El paquete no especifica más cosas
+
+###colDesc <- colDescriptions(sra_con=sra_con)[1:5,]
+###colDesc[, 1:4]
